@@ -201,11 +201,10 @@ ul{
     /* height: 1000px; */
     gap: 45px;
     margin: 40px;
-    line-height: 1.5rem;
     font-weight: 400;
     color: black;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .container-rest p{
@@ -349,7 +348,7 @@ ul{
     padding: 50px;
 }
 
-.container-fouder .left{
+.container-founder .left{
     width: 100%;
     height:35%;
     padding: 25px;
@@ -482,7 +481,6 @@ footer{
 @media screen and (max-width: 991px){
     .nav-toggle{
         display: block;
-        margin-right: 20px;
     }
     .main-nav{
         overflow: initial;
@@ -517,6 +515,64 @@ footer{
     h3{
         font-size: 1.1rem;
     }
+    .container-rest{
+        flex-direction: column;
+        /* height: 1000px; */
+        gap: 45px;
+        font-weight: 400;
+        color: black;
+    }
+
+    
+    .container-rest .about{
+        height: 3rem;
+        width: 20rem;
+        color: white;
+        font-size: 28px;
+        background-color: #014235;
+    }
+    .container-rest .about:hover{
+        color: black;
+        font-weight: 300;
+        background-color: white;
+        transition: 1ms ease-in-out;
+    }
+
+    .container-number{
+        padding-left: 0%;
+    }
+    
+    .container-number h1{
+        font-size: 1.9rem;
+    }
+
+    .container-number h3,.container-number h1{
+        text-align: start;
+        padding-bottom: 30px;
+    }
+    
+    .container-number .heading{
+        font-size: 5rem;
+    }
+    
+    .container-number .card .info{
+        margin-top: 70px;
+    }
+    .card{
+        height:150px;
+    }
+    
+    .card p{
+        flex-direction: row;
+        color: white;
+        justify-content: space-around;
+        text-align: center;
+        padding-left: 25px;
+    }
+
+    .container-founder .left .founder{
+        font-size: 1rem;
+    }
 }
 
 
@@ -524,6 +580,10 @@ footer{
 
 @media screen and (max-width:767px){
 
+    *{
+        padding: 0%;
+        margin: 1%;
+    }
     .header-section{
         flex-direction: column-reverse;
     }
@@ -553,6 +613,66 @@ footer{
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .container-reconnect{
+        height: 83vh;
+    }
+
+    .container-rest{
+        margin-bottom: 2rem;
+    }
+    .container-reconnect{
+        height:83vh;
+        flex-direction: column;
+    }
+     #second-big-feature{
+        flex-direction: column-reverse;
+    }
+    .container-number{
+        padding-left: 0%;
+        height: 73vh;
+        width: 100%;
+    }
+    
+    .container-number h1{
+        font-size: 1.3rem;
+    }
+    .container-number h3{
+        font-size: 0.7rem;
+    }
+    
+    .container-number h3,.container-number h1{
+        text-align: start;
+        padding-bottom: 30px;
+    }
+    
+    .container-number .heading{
+        font-size: 3rem;
+    }
+    
+    .container-number .card .info{
+        margin-top: 50px;
+    }
+    .card{
+        margin-top: 10px;
+        height:150px;
+        flex-direction: column;
+    }
+    
+    .card p{
+        flex-direction: row;
+        color: white;
+        justify-content: space-around;
+        text-align: center;
+        padding-left: 25px;
+    }
+
+    .container-founder{
+        flex-direction: column;
+    }
+    .container-founder .right img{
+        width: 98%;
+        height: 65%;
+    }
 }
 
 
@@ -564,18 +684,23 @@ footer{
         --padding-inline-section: 10px;
     }
     h1{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     h2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     p{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .features-card{
         min-width: 100%;
     }
     .examples-card{
         min-width: 100%;
+    }
+
+    #innerDiv {
+        line-height: 1rem;
+        top:44%;
     }
 }
